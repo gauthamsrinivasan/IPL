@@ -6,7 +6,7 @@ import java.util.Arrays;
  *
  * @author ADMIN
  */
-public class Dictionary {
+public class properties {
 
     /**
      * @param args the command line arguments
