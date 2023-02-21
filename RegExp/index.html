@@ -26,7 +26,7 @@
             <h1>Regular Expression</h1>
         </div>
         <div>
-            <table class="standard-table" align="center">
+            <table align="center">
                 <tr>
                   <th>Value</th>
                   <th >Description</th>
@@ -87,79 +87,79 @@
                 <tr>
                     <td>Metacharacters in RegExp</td>
                     <td>
-                      <table class="standard-table" align="center">
+                      <table align="center">
                         <thead>
                           <tr>
-                            <th scope="col">
-                              <p style="text-align: center;"><strong>Regular Expression</strong></p>
+                            <th >
+                              <strong>Regular Expression</strong>
                             </th>
-                            <th scope="col">
-                              <p style="text-align: center;"><strong>Description</strong></p>
+                            <th>
+                              <strong>Description</strong>
                             </th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
                             <td>
-                              <p style="text-align: center;"><strong>\d</strong></p>
+                             <strong>\d</strong>
                             </td>
                             <td>
-                              <p style="text-align: center;">Any digits, short-code for [0-9]</p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <p style="text-align: center;"><strong>\D</strong></p>
-                            </td>
-                            <td>
-                              <p style="text-align: center;">Any non-digits, short-code for [^0-9]</p>
+                              Any digits, short-code for [0-9]
                             </td>
                           </tr>
                           <tr>
                             <td>
-                              <p style="text-align: center;"><strong>\s</strong></p>
+                              <strong>\D</strong>
                             </td>
                             <td>
-                              <p style="text-align: center;">
+                             Any non-digits, short-code for [^0-9]
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <strong>\s</strong>
+                            </td>
+                            <td>
+                              
                                 Any white space character, short-code for [\t\n\x0B\f\r]
-                              </p>
+                              
                             </td>
                           </tr>
                           <tr>
                             <td>
-                              <p style="text-align: center;"><strong>\S</strong></p>
+                            <strong>\S</strong>
                             </td>
                             <td>
-                              <p style="text-align: center;">Any non-whitespace character</p>
+                              Any non-whitespace character
                             </td>
                           </tr>
                           <tr>
                             <td>
-                              <p style="text-align: center;"><strong>\w</strong></p>
+                              <strong>\w</strong>
                             </td>
                             <td>
-                              <p style="text-align: center;">
+                              
                                 Any word character, short-code for [a-zA-Z_0-9]
-                              </p>
+                              
                             </td>
                           </tr>
                           <tr>
                             <td>
-                              <p style="text-align: center;"><strong>\W</strong></p>
+                              <strong>\W</strong>
                             </td>
-                            <td><p style="text-align: center;">Any non-word character</p></td>
+                            <td>Any non-word character</td>
                           </tr>
                           <tr>
                             <td>
-                              <p style="text-align: center;"><strong>\b</strong></p>
+                              <strong>\b</strong>
                             </td>
-                            <td><p style="text-align: center;">Represents a word boundary</p></td>
+                            <td>Represents a word boundary</td>
                           </tr>
                           <tr>
                             <td>
-                              <p style="text-align: center;"><strong>\B</strong></p>
+                              <strong>\B</strong>
                             </td>
-                            <td><p style="text-align: center;">Represents a non-word boundary</p></td>
+                            <td>Represents a non-word boundary</td>
                           </tr>
                         </tbody>
                       </table>
@@ -181,67 +181,67 @@
                         <tr>
                           <td><code><em>x</em>*</code></td>
                           <td>
-                            <p>
+                          
                               Matches the preceding item "x" 0 or more times.
-                            </p>
+                            
                           </td>
                         </tr>
                         <tr>
                           <td><code><em>x</em>+</code></td>
                           <td>
-                            <p>
+                        
                               Matches the preceding item "x" 1 or more times. Equivalent to
                               <code>{1,}</code>.
-                            </p>
+                          
                           </td>
                         </tr>
                         <tr>
                           <td><code><em>x</em>?</code></td>
                           <td>
-                            <p>
-                              Matches the preceding item "x" 0 or 1 times.</p>                            
+                        
+                              Matches the preceding item "x" 0 or 1 times.                           
                           </td>
                         </tr>
                         <tr>
                           <td><code><em>x</em>{<em>n</em>}</code></td>
                           <td>
-                            <p>
+                            
                               Where "n" is a positive integer, matches exactly "n" occurrences of
                               the preceding item "x".
-                            </p>
+                            
                           </td>
                         </tr>
                         <tr>
                           <td><code><em>x</em>{<em>n</em>,}</code></td>
                           <td>
-                            <p>
+                            
                               Where "n" is a positive integer, matches at least "n" occurrences of
                               the preceding item "x".
-                            </p>
+                            
                           </td>
                         </tr>
                         <tr>
                           <td><code><em>x</em>{<em>n</em>,<em>m</em>}</code></td>
                           <td>
-                            <p>
+                            
                               Where "n" is 0 or a positive integer, "m" is a positive integer, and
                               <code><em>m</em> &gt; <em>n</em></code>, matches at least "n" and at most "m" occurrences of the preceding
                               item "x".
-                            </p>
+                            
                           </td>
                         </tr>
                         <tr>
                           <td>
-                            <p><code><em>x</em>*?</code><br><code><em>x</em>+?</code><br><code><em>x</em>??</code><br><code><em>x</em>{n}?</code><br><code><em>x</em>{n,}?</code><br><code><em>x</em>{n,m}?</code></p>
+                            <code><em>x</em>*?</code><br><code><em>x</em>+?</code><br><code><em>x</em>??</code><br><code><em>x</em>{n}?</code><br><code><em>x</em>{n,}?</code><br><code><em>x</em>{n,m}?</code>
                           </td>
                           <td>
-                            <p>
+                            
                               By default quantifiers like <code>*</code> and <code>+</code> are
                               "greedy", meaning that they try to match as much of the string as
                               possible. The <code>?</code> character after the quantifier makes the
                               quantifier "non-greedy": meaning that it will stop as soon as it finds
                               a match.
-                            </p>
+                            
                             
                           </td>
                         </tr>
@@ -298,7 +298,8 @@
                 </tr>
               </table>
         </div>
-        <p><a href="page.html" target="_blank">Link to other page</a></p>
+   
+        <p><a href="page1.html" target="_blank">Link to other page</a></p>
         
         <script src="" async defer></script>
       </center>
