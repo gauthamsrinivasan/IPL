@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Reg Exp</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>table,th, td {
+            border: 1px solid rgb(7, 90, 122);
+            border-collapse: collapse;
+            
+          }
+          tr,td{
+            align-items: center;
+            align-content: center;
+            text-align: center;
+        }
+        </style>
+    </head>
+    <body bgcolor="lightblue">
+      <center>
+        <div>
+            <h1>Regular Expression</h1>
+        </div>
+        <div>
+            <table class="standard-table" align="center">
+                <tr>
+                  <th>Value</th>
+                  <th >Description</th>
+                </tr>
+                <tr>
+                  <td> const re = new <strong>RegExp</strong>("ab+c", "i");</td>
+                  <td >The constructor function takes either a string or a RegExp object as its first parameter and a string of optional flags as its second parameter.</td>
+                </tr>
+                <tr>
+                  <td>Modifiers</td>
+                  <td >
+
+                    <table align="center">
+                        <thead>
+                          <tr>
+                            <th>Flag</th>
+                            <th>Description</th>
+                            
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><code>d</code></td>
+                            <td>Generate indices for substring matches.</td>
+                            </tr>
+                          <tr>
+                            <td><code>g</code></td>
+                            <td>Global search.</td>
+                            </tr>
+                          <tr>
+                            <td><code>i</code></td>
+                            <td>Case-insensitive search.</td>
+                            </tr>
+                          <tr>
+                            <td><code>m</code></td>
+                            <td>Allows <code>^</code> and <code>$</code> to match newline characters.</td>
+                            </tr>
+                          <tr>
+                            <td><code>s</code></td>
+                            <td>Allows <code>.</code> to match newline characters.</td>
+                            </tr>
+                          <tr>
+                            <td><code>u</code></td>
+                            <td>"Unicode"; treat a pattern as a sequence of Unicode code points.</td>
+                            </tr>
+                          <tr>
+                            <td><code>y</code></td>
+                            <td>Perform a "sticky" search that matches starting at the current position in the target string.</td>
+                            </tr>
+                        </tbody>
+                      </table>
+                  </td>
+                </tr>
+                <tr>
+                    <td>Brackets <strong>[]</strong> in RegExp<br/><code>'string'.match(/[abcd]/) // -> matches 'a'</code></td>
+                    <td>Brackets indicate a set of characters to match. Any individual character between the brackets will match, and you can also use a hyphen to define a set.</td>
+                </tr>
+                <tr>
+                    <td>Metacharacters in RegExp</td>
+                    <td>
+                      <table class="standard-table" align="center">
+                        <thead>
+                          <tr>
+                            <th scope="col">
+                              <p style="text-align: center;"><strong>Regular Expression</strong></p>
+                            </th>
+                            <th scope="col">
+                              <p style="text-align: center;"><strong>Description</strong></p>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <p style="text-align: center;"><strong>\d</strong></p>
+                            </td>
+                            <td>
+                              <p style="text-align: center;">Any digits, short-code for [0-9]</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p style="text-align: center;"><strong>\D</strong></p>
+                            </td>
+                            <td>
+                              <p style="text-align: center;">Any non-digits, short-code for [^0-9]</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p style="text-align: center;"><strong>\s</strong></p>
+                            </td>
+                            <td>
+                              <p style="text-align: center;">
+                                Any white space character, short-code for [\t\n\x0B\f\r]
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p style="text-align: center;"><strong>\S</strong></p>
+                            </td>
+                            <td>
+                              <p style="text-align: center;">Any non-whitespace character</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p style="text-align: center;"><strong>\w</strong></p>
+                            </td>
+                            <td>
+                              <p style="text-align: center;">
+                                Any word character, short-code for [a-zA-Z_0-9]
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p style="text-align: center;"><strong>\W</strong></p>
+                            </td>
+                            <td><p style="text-align: center;">Any non-word character</p></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p style="text-align: center;"><strong>\b</strong></p>
+                            </td>
+                            <td><p style="text-align: center;">Represents a word boundary</p></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p style="text-align: center;"><strong>\B</strong></p>
+                            </td>
+                            <td><p style="text-align: center;">Represents a non-word boundary</p></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      
+                    </td>
+                </tr>
+
+                <tr>
+                  <td>Quantifiers</td>
+                  <td>
+                    <table >
+                      <thead>
+                        <tr>
+                          <th >Characters</th>
+                          <th >Meaning</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><code><em>x</em>*</code></td>
+                          <td>
+                            <p>
+                              Matches the preceding item "x" 0 or more times.
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><code><em>x</em>+</code></td>
+                          <td>
+                            <p>
+                              Matches the preceding item "x" 1 or more times. Equivalent to
+                              <code>{1,}</code>.
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><code><em>x</em>?</code></td>
+                          <td>
+                            <p>
+                              Matches the preceding item "x" 0 or 1 times.</p>                            
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><code><em>x</em>{<em>n</em>}</code></td>
+                          <td>
+                            <p>
+                              Where "n" is a positive integer, matches exactly "n" occurrences of
+                              the preceding item "x".
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><code><em>x</em>{<em>n</em>,}</code></td>
+                          <td>
+                            <p>
+                              Where "n" is a positive integer, matches at least "n" occurrences of
+                              the preceding item "x".
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><code><em>x</em>{<em>n</em>,<em>m</em>}</code></td>
+                          <td>
+                            <p>
+                              Where "n" is 0 or a positive integer, "m" is a positive integer, and
+                              <code><em>m</em> &gt; <em>n</em></code>, matches at least "n" and at most "m" occurrences of the preceding
+                              item "x".
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p><code><em>x</em>*?</code><br><code><em>x</em>+?</code><br><code><em>x</em>??</code><br><code><em>x</em>{n}?</code><br><code><em>x</em>{n,}?</code><br><code><em>x</em>{n,m}?</code></p>
+                          </td>
+                          <td>
+                            <p>
+                              By default quantifiers like <code>*</code> and <code>+</code> are
+                              "greedy", meaning that they try to match as much of the string as
+                              possible. The <code>?</code> character after the quantifier makes the
+                              quantifier "non-greedy": meaning that it will stop as soon as it finds
+                              a match.
+                            </p>
+                            
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>RegExp Methods</td>
+                  <td> 
+                    <table align="center">
+                    <thead>
+                      <tr>
+                        <th>Method</th>
+                        <th>Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><code>exec()</code></a></td>
+                        <td>Executes a search for a match in a string. It returns an array of information or <code>null</code> on a mismatch.</td>
+                      </tr>
+                      <tr>
+                        <td><code>test()</code></a></td>
+                        <td>Tests for a match in a string. It returns <code>true</code> or <code>false</code>.</td>
+                      </tr>
+                      <tr>
+                        <td><code>match()</code></a></td>
+                        <td>Returns an array containing all of the matches, including capturing groups, or <code>null</code> if no match is found.</td>
+                      </tr>
+                      <tr>
+                        <td><code>matchAll()</code></a></td>
+                        <td>Returns an iterator containing all of the matches, including capturing groups.</td>
+                      </tr>
+                      <tr>
+                        <td><code>search()</code></a></td>
+                        <td>Tests for a match in a string. It returns the index of the match, or <code>-1</code> if the search fails.</td>
+                      </tr>
+                      <tr>
+                        <td><code>replace()</code></a></td>
+                        <td>Executes a search for a match in a string, and replaces the matched substring with a replacement substring.</td>
+                      </tr>
+                      <tr>
+                        <td><code>replaceAll()</code></a></td>
+                        <td>Executes a search for all matches in a string, and replaces the matched substrings with a replacement substring.</td>
+                      </tr>
+                      <tr>
+                        <td><code>split()</code></a></td>
+                        <td>Uses a regular expression or a fixed string to break a string into an array of substrings.</td>
+                      </tr>
+                    </tbody>
+                  </table></td>
+                </tr>
+              </table>
+        </div>
+        <p><a href="page.html" target="_blank">Link to other page</a></p>
+        
+        <script src="" async defer></script>
+      </center>
+    </body>
+</html>
