@@ -100,7 +100,7 @@
 .grower {
  width: 600px;
  height: 80px;
- background: lightseagreen;
+ background: rgb(2, 8, 54);
  position: relative;
  margin-left: auto;
  margin-right: auto;
@@ -128,4 +128,7 @@ border-radius: 50%;
   50%  {background-color:blue; left:1250px; top:420px;}
   75%  {background-color:green; left:0px; top:420px;}
   100% {background-color:red; left:0px; top:0px;}
+}
+body{
+  background-color: #81bdf5;
 }
