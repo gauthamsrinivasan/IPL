@@ -111,3 +111,21 @@ p{
   bottom: 0px;
   right: 0px;
 }
+#abc {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: absolute;
+  animation: myfirst 5s linear 2s infinite alternate;
+z-index: -1;
+border-radius: 50%;
+  
+}
+
+@keyframes myfirst {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:1250px; top:0px;}
+  50%  {background-color:blue; left:1250px; top:420px;}
+  75%  {background-color:green; left:0px; top:420px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
