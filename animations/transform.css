@@ -1,0 +1,194 @@
+h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    color: rgb(25, 1, 48);
+ }
+ body {
+    background-color: #faa13c;
+    font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+    margin: 12px 15px;
+  }
+  .original,
+  .box,
+  .rotate {
+    border-radius: 6px;
+  }
+  .original {
+    background: #eaeaed;
+    border: 1px dashed #cecfd5;
+    float: left;
+    margin: 12px 15px;
+    position: relative;
+    left: 350px;
+    
+    
+
+  }
+  .box {
+    background: #2f0353;
+    height: 95px;
+    line-height: 95px;
+    text-align: center;
+    transform: rotateX(15deg) translateZ(20px);
+    transform-origin: 0 0;
+    width: 95px;
+  }
+  .spin {
+    cursor: pointer;
+    transform-style: preserve-3d;
+  }
+  .spin:hover {
+      animation: spin 5s linear infinite;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+  .rotate {
+    background: rgba(41, 85, 231, 0.3);
+    transform: perspective(200px) rotateY(45deg);
+  }
+  .three-d {
+    transform-style: preserve-3d;
+  }
+  .box-1 {
+    transform: perspective(200px) rotateX(45deg);
+  }
+  .box-3 {
+    transform: skew(5deg, -20deg);
+  }
+
+  .robots {
+}
+
+.head,
+.left_arm,
+.torso,
+.right_arm,
+.left_leg,
+.right_leg {
+	 background-color: #08285c;
+     position: relative;
+     top: 150px;
+}
+
+.head {
+	width: 200px;
+	margin: 0 auto;
+	height: 150px;
+	border-radius: 200px 200px 0 0;
+	margin-bottom: 10px;
+
+}
+
+.eyes {
+
+}
+
+.head:hover {
+	width: 300px;
+    transition: 1s ease-in-out;
+}
+
+.upper_body {
+	margin: 0 auto;
+	width: 300px;
+	height: 150px;
+	display: flex;
+	justify-content: center;
+
+}
+
+.left_arm, .right_arm {
+	width: 40px;
+	height: 125px;
+	border-radius: 100px;
+}
+
+.left_arm {
+	margin-right: 10px;
+	transition: all 1s;
+}
+
+.left_arm:hover {
+	transform: rotate(360deg);
+}
+
+.right_arm {
+	margin-left: 10px;
+	transition: all 0.5s;
+}
+
+.right_arm:hover {
+	transform: rotate(-135deg);
+}
+
+.torso {
+	width: 200px;
+	height: 200px;
+	border-radius: 0 0 50px 50px;
+}
+
+.lower_body {
+	width: 200px;
+	height: 200px;
+	/* This is another useful property. Hmm what do you think it does?*/
+	margin: 0 auto;
+}
+
+.left_leg, .right_leg {
+	width: 40px;
+	height: 120px;
+	border-radius: 0 0 100px 100px;
+}
+
+.left_leg {
+	margin-left: 45px;
+}
+
+.left_leg:hover {
+	-webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
+.right_leg {
+	position: relative;
+	margin-left: 115px;
+	margin-bottom: 120px;
+	transform: translate(0px, -120px);
+}
+
+.left_eye, .right_eye {
+	width: 20px;
+	height: 20px;
+	border-radius: 15px;
+	background-color: white;
+}
+
+.left_eye {
+	position: relative;
+	margin-left: 40px;
+	transform: translate(0px, 100px);
+}
+
+.left_eye:hover {
+	background-color: red;
+}
+
+.right_eye {
+	position: relative;
+	margin-left: 140px;
+	transform: translate(0px, 80px);
+}
+
+.right_eye:hover {
+	background-color: green;
+}
