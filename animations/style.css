@@ -1,0 +1,46 @@
+.element {
+  display: inline-block;
+  background-color: #aaaaaa;
+  height: 100px;
+  width: 100px;
+  transform: skew(20deg);
+  font-size: 1px;
+  padding: 1px;
+  color: white;
+  margin-right: 5px;
+  margin-left: 5px;
+  animation: shake 2s infinite;
+  animation-direction: alternate;
+}
+.text {
+  display: inline-block;
+  background-color: #ffffff;
+  transform: skew(20deg);
+  font-size: 30px;
+  padding: 1px;
+  color: rgb(226, 8, 8);
+  margin-right: 5px;
+  margin-left: 5px;
+  animation: shake 2s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes shake {
+  0% {
+    transform: skewY(20deg);
+  }
+  100% {
+    transform: skewY(-20deg);
+  }
+}
+
+body, html {
+  height: 100%;
+}
+
+
+body {
+  display: absolute;
+  align-items: center;
+  justify-content: center;
+}
